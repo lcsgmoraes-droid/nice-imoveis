@@ -1,0 +1,35 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Nice Moraes Imobiliaria</title>
+  <desc id="desc">Monograma NM dourado com naming em branco e dourado, sem fundo.</desc>
+
+  <g transform="translate(80,24)">
+    <g fill="none" stroke="#c9ae70" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Telhado -->
+      <path d="M166 78 L332 10 L502 78" stroke-width="12"/>
+      <path d="M332 12 L332 -12" stroke-width="10"/>
+      <path d="M494 44 L494 8" stroke-width="10"/>
+
+      <!-- Estrutura vertical da marca -->
+      <path d="M268 52 L268 174" stroke-width="11"/>
+      <path d="M356 52 L356 174" stroke-width="11"/>
+
+      <!-- N estilizado -->
+      <path d="M192 168 L192 54" stroke-width="14"/>
+      <path d="M192 54 L300 168" stroke-width="14"/>
+      <path d="M300 168 L300 54" stroke-width="14"/>
+      <path d="M170 160 L308 92" stroke-width="12"/>
+
+      <!-- M estilizado -->
+      <path d="M326 168 L326 54" stroke-width="14"/>
+      <path d="M326 54 L410 146" stroke-width="14"/>
+      <path d="M410 146 L486 54" stroke-width="14"/>
+      <path d="M486 54 L486 168" stroke-width="14"/>
+      <path d="M356 52 L420 130" stroke-width="11"/>
+    </g>
+
+    <text x="0" y="250" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="1">NICE MORAES</text>
+    <text x="90" y="312" fill="#d5b778" font-family="Manrope, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="11">IMOBILIARIA</text>
+    <text x="58" y="362" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="53" font-weight="700" letter-spacing="1.5">NEGOCIOS IMOBILIARIOS</text>
+    <text x="62" y="408" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="1">SEU IMOVEL COMECA AQUI.</text>
+  </g>
+</svg>

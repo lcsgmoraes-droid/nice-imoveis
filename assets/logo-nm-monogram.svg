@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520" role="img" aria-label="Monograma NM com telhado">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4d98a"/>
+      <stop offset="45%" stop-color="#c9a24c"/>
+      <stop offset="100%" stop-color="#8a6a25"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 165 L260 58 L430 165"/>
+    <path d="M125 148 L260 62"/>
+    <path d="M350 106 L350 75 L368 75 L368 124" stroke-width="8"/>
+  </g>
+
+  <g fill="url(#gold)">
+    <polygon points="56,150 101,150 242,370 242,450 196,450 82,274 82,450 56,450"/>
+    <polygon points="278,450 278,186 322,186 382,324 442,186 486,186 486,450 450,450 450,248 395,370 369,370 314,248 314,450"/>
+  </g>
+</svg>
