@@ -1,0 +1,94 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --shadow-luxury: 0 30px 60px -20px color-mix(in oklab, var(--navy-deep) 50%, transparent);
+  --shadow-gold: 0 10px 40px -10px color-mix(in oklab, var(--gold) 40%, transparent);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  --navy-deep: oklch(0.22 0.07 255);
+  --navy: oklch(0.30 0.08 255);
+  --gold: oklch(0.78 0.13 85);
+  --gold-soft: oklch(0.88 0.08 85);
+
+  --background: oklch(0.985 0.005 80);
+  --foreground: oklch(0.22 0.07 255);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0.07 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.22 0.07 255);
+  --primary: var(--navy-deep);
+  --primary-foreground: oklch(0.985 0.005 80);
+  --secondary: oklch(0.96 0.01 80);
+  --secondary-foreground: var(--navy-deep);
+  --muted: oklch(0.95 0.01 80);
+  --muted-foreground: oklch(0.50 0.02 255);
+  --accent: var(--gold);
+  --accent-foreground: var(--navy-deep);
+  --border: oklch(0.90 0.01 80);
+  --input: oklch(0.90 0.01 80);
+  --ring: var(--gold);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, .font-serif { font-family: var(--font-serif); letter-spacing: 0.005em; }
+}
+
+@layer utilities {
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+  }
+  .text-gold-gradient {
+    background: linear-gradient(180deg, var(--gold-soft) 0%, var(--gold) 50%, oklch(0.55 0.10 70) 100%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .shadow-luxury { box-shadow: var(--shadow-luxury); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+}
